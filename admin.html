@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <nav>
+            <a href="index.html">Vista Pública</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <h2>Agregar Nuevo Post</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="Título del post" required />
+                <textarea id="postContent" placeholder="Contenido del post" required></textarea>
+                <button type="submit">Agregar Post</button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h2>Posts Existentes</h2>
+            <div id="postsAdmin"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Panel de Administración</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>

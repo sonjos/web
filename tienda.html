@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda </title>
+    <link rel="stylesheet" href="tienda.css" />
+</head>
+<body>
+    <header>
+        <h1>Tienda Moderna</h1>
+        <button id="toggleCartBtn">🛒 Carrito (<span id="cartCount">0</span>)</button>
+    </header>
+
+    <!-- Carrito desplegable -->
+    <div id="cartContainer" class="cart-hidden">
+        <h2>Carrito de Compras</h2>
+        <div id="cartItems"></div>
+        <p>Total: $<span id="totalAmount">0</span></p>
+        <button id="finalizeBtn">Finalizar Compra</button>
+    </div>
+
+    <!-- Sección de artículos en oferta -->
+    <section>
+        <h2 class="section-header">¡Ofertas Especiales!</h2>
+        <div class="articles-container" id="ofertas"></div>
+    </section>
+
+    <!-- Sección de artículos regulares -->
+    <section>
+        <h2 class="section-header">Nuestros Artículos</h2>
+        <div class="articles-container" id="regulares"></div>
+    </section>
+
+    <!-- Modal de compra finalizada -->
+    <div id="modal" class="modal-hidden">
+        <div class="modal-content">
+            <h2>¡Compra Finalizada!</h2>
+            <p>Has comprado <span id="itemsBought">0</span> artículos por un total de $<span id="amountSpent">0</span>.</p>
+            <button id="closeModal">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="tienda.js"></script>
+</body>
+</html>

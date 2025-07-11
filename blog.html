@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Blog </title>
+    <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+    <header>
+        <h1>Mi Blog Moderno</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="admin.html">Administrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="posts">
+            <article class="post">
+                <h2>Título del Primer Post</h2>
+                <p>Este es el contenido del primer post. ¡Bienvenido a mi blog!</p>
+            </article>
+            <!-- Aquí puedes agregar más posts dinámicamente -->
+        </section>
+
+        <section class="comments-section">
+            <h3>Comentarios</h3>
+            <div id="comments"></div>
+            <form id="commentForm">
+                <input type="text" id="name" placeholder="Tu nombre" required />
+                <textarea id="comment" placeholder="Tu comentario" required></textarea>
+                <button type="submit">Enviar comentario</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Blog Moderno</p>
+    </footer>
+
+    <script src="blog.js"></script>
+</body>
+</html>

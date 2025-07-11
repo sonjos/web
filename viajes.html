@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viajes Increíbles</title>
+    <link rel="stylesheet" href="viajes.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">ViajesIncreíbles</h1>
+            <nav>
+                <ul>
+                    <li><a href="#destinations">Destinos</a></li>
+                    <li><a href="#packages">Paquetes</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <section class="hero">
+            <h2>Descubre el mundo con nosotros</h2>
+            <p>Viajes personalizados y experiencias inolvidables</p>
+            <a href="#destinations" class="btn">Ver Destinos</a>
+        </section>
+    </header>
+
+    <section id="destinations" class="destinations">
+        <h2>Destinos Populares</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="París" />
+                <h3>París</h3>
+                <p>La ciudad del amor y la luz, perfecta para románticos y amantes del arte.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Bali" />
+                <h3>Bali</h3>
+                <p>Islas paradisíacas con hermosas playas, cultura y naturaleza exuberante.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1549887534-7c680845da34?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Nueva York" />
+                <h3>Nueva York</h3>
+                <p>La ciudad que nunca duerme, llena de vida, cultura y oportunidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <h2>Paquetes Destacados</h2>
+        <div class="packages-container">
+            <div class="package-card">
+                <h3>Escapada a París</h3>
+                <p>7 días con vuelos, hotel y tours incluidos.</p>
+                <p class="price">$1,200</p>
+                <button class="btn-primary">Reservar Ahora</button>
+            </div>
+            <div class="package-card">
+                <h3>Aventura en Bali</h3>
+                <p>10 días con actividades, alojamiento y transporte.</p>
+                <p class="price">$2,300</p>
+                <button class="btn-primary">Reservar Ahora</button>
+            </div>
+            <div class="package-card">
+                <h3>Ciudad de Nueva York</h3>
+                <p>5 días con hotel, entradas y guías incluidos.</p>
+                <p class="price">$950</p>
+                <button class="btn-primary">Reservar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Sobre Nosotros</h2>
+        <p>En ViajesIncreíbles nos apasiona ayudarte a descubrir nuevos destinos y crear experiencias únicas. Con años de experiencia en el sector, ofrecemos viajes personalizados y atención de calidad para que tu aventura sea inolvidable.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Nombre completo" required />
+            <input type="email" id="email" placeholder="Correo electrónico" required />
+            <textarea id="message" rows="4" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+        <div id="form-response"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ViajesIncreíbles. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Instagram" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Twitter" /></a>
+        </div>
+    </footer>
+
+    <script src="viajes.js"></script>
+</body>
+</html>
